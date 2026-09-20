@@ -1,16 +1,28 @@
+<p align="center">
+  <img src="assets/ai-roadmap-banner.svg" width="100%" alt="AI Roadmap — From Scratch to Frontier">
+</p>
+
 <h1 align="center">AI Roadmap — From Scratch to Frontier</h1>
 
 <p align="center">
-  <strong>A complete, research-oriented learning path for Artificial Intelligence — from Python and mathematics to modern LLMs, multimodal AI, agents, reinforcement learning, generative models, AI systems, 3D vision, and frontier research.</strong>
+  <strong>The research-oriented roadmap for learning Artificial Intelligence from first principles to modern frontier systems.</strong>
 </p>
 
 <p align="center">
-  Beginner → Machine Learning → Deep Learning → Transformers → LLMs → Multimodal → Agents → Frontier AI
+  Python & Math · Machine Learning · Deep Learning · Computer Vision · NLP · Transformers · LLMs · RAG · Agents · Diffusion · Multimodal AI · RL · AI Systems · 3D & Embodied AI
 </p>
 
 <p align="center">
-  <strong>README-only roadmap</strong> · <strong>Paper-first</strong> · <strong>Project-driven</strong> · <strong>Beginner to Research</strong>
+  <a href="#-start-here"><strong>Start Here</strong></a> ·
+  <a href="#-choose-your-path"><strong>Choose a Path</strong></a> ·
+  <a href="#-roadmap-dashboard"><strong>Roadmap</strong></a> ·
+  <a href="#the-paper-ladder"><strong>Papers</strong></a> ·
+  <a href="#the-project-ladder"><strong>Projects</strong></a> ·
+  <a href="#resource-library"><strong>Resources</strong></a>
 </p>
+
+> **One roadmap. Four levels:** Beginner → Builder → Engineer → Researcher
+
 
 ---
 
@@ -24,11 +36,71 @@ This roadmap is designed as a **machine learning roadmap, deep learning roadmap,
 
 The goal is not to learn every paper ever published. The goal is to build the mental model needed to understand new AI systems as they appear.
 
+
+> ⭐ **Useful?** Star the repository to bookmark the roadmap and help other learners find it.
+
 ---
 
-## Table of Contents
+## 🚀 Start Here
 
-- [The Roadmap at a Glance](#the-roadmap-at-a-glance)
+This repository is designed to answer one question:
+
+> **If I started learning AI today, what should I learn, in what order, what should I build, and which papers actually matter?**
+
+You do **not** need to finish everything before building projects or applying for jobs. Pick a path, follow the foundations, and deepen only where your goal requires it.
+
+<table>
+<tr>
+<td width="25%" valign="top">
+
+### 01 · Foundations
+Python, Git, Linux, NumPy, math, probability and optimization.
+
+**Goal:** stop treating ML as magic.
+
+</td>
+<td width="25%" valign="top">
+
+### 02 · Core AI
+Classical ML, neural networks, PyTorch and experiment design.
+
+**Goal:** train and debug models.
+
+</td>
+<td width="25%" valign="top">
+
+### 03 · Modern AI
+Vision, NLP, Transformers, LLMs, diffusion and multimodal systems.
+
+**Goal:** understand today's architectures.
+
+</td>
+<td width="25%" valign="top">
+
+### 04 · Frontier
+Post-training, RAG, agents, RL, efficient inference, 3D and embodied AI.
+
+**Goal:** read and build from current research.
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🎯 Choose Your Path
+
+| Path | Best for | Prioritize |
+|---|---|---|
+| ⚙️ **AI / ML Engineer** | Building reliable AI products | Phases 0–4 → 7–9 → 13 |
+| 👁️ **Computer Vision Engineer** | Vision, detection, VLMs, 3D | Phases 0–5 → 11 → 13–14 |
+| 🧠 **NLP / LLM Engineer** | Transformers, LLMs, RAG | Phases 0–4 → 6–9 → 13 |
+| 🔬 **Research Engineer** | Implementing papers and scaling experiments | Phases 0–8 → 11–14 |
+| 📚 **Research Scientist** | Original research | Full roadmap + deep math + paper reproduction |
+
+<details>
+<summary><strong>📌 Full navigation</strong></summary>
+
 - [How to Use This Roadmap](#how-to-use-this-roadmap)
 - [Phase 0 — Computing Foundations](#phase-0--computing-foundations)
 - [Phase 1 — Mathematics for AI](#phase-1--mathematics-for-ai)
@@ -47,33 +119,33 @@ The goal is not to learn every paper ever published. The goal is to build the me
 - [Phase 14 — 3D, Embodied and Frontier AI](#phase-14--3d-embodied-and-frontier-ai)
 - [The Paper Ladder](#the-paper-ladder)
 - [The Project Ladder](#the-project-ladder)
-- [Choose Your Career Track](#choose-your-career-track)
-- [A Practical Weekly Study System](#a-practical-weekly-study-system)
-- [How to Read AI Papers](#how-to-read-ai-papers)
-- [When Are You Job-Ready?](#when-are-you-job-ready)
-- [How to Stay Current](#how-to-stay-current)
+- [Resource Library](#resource-library)
+
+</details>
 
 ---
 
-# The Roadmap at a Glance
+# 🧭 Roadmap Dashboard
 
-| Phase | Focus | Outcome |
+
+
+| Stage | Focus | You should be able to… |
 |---:|---|---|
-| 0 | Python, Git, Linux, NumPy | Comfortable building and debugging technical projects |
-| 1 | Linear algebra, calculus, probability | Understand the mathematics behind models |
-| 2 | Classical ML | Build strong statistical intuition |
-| 3 | Neural networks | Understand backpropagation and optimization |
-| 4 | PyTorch + deep learning | Train modern neural networks confidently |
-| 5 | Computer vision | CNNs, ViTs, detection, segmentation, representation learning |
-| 6 | NLP + Transformers | Tokenization, attention, encoder/decoder architectures |
-| 7 | Large language models | Pretraining, scaling, decoder-only models, evaluation |
-| 8 | Post-training | SFT, LoRA/QLoRA, RLHF, DPO, preference optimization |
-| 9 | RAG + agents | Retrieval, tools, memory, orchestration, evaluation |
-| 10 | Generative AI | VAEs, GANs, diffusion, latent generative models |
-| 11 | Multimodal AI | CLIP, VLMs, image-text reasoning, multimodal instruction tuning |
-| 12 | RL + reasoning | PPO, offline RL, RLHF/RLVR, reasoning-oriented training |
-| 13 | AI systems | GPUs, distributed training, quantization, serving, inference |
-| 14 | Frontier AI | 3D, world models, embodied AI, research methodology |
+| 🟢 **0** | Python, Git, Linux, NumPy | Comfortable building and debugging technical projects |
+| 🟢 **1** | Linear algebra, calculus, probability | Understand the mathematics behind models |
+| 🔵 **2** | Classical ML | Build strong statistical intuition |
+| 🔵 **3** | Neural networks | Understand backpropagation and optimization |
+| 🔵 **4** | PyTorch + deep learning | Train modern neural networks confidently |
+| 🟣 **5** | Computer vision | CNNs, ViTs, detection, segmentation, representation learning |
+| 🟣 **6** | NLP + Transformers | Tokenization, attention, encoder/decoder architectures |
+| 🟣 **7** | Large language models | Pretraining, scaling, decoder-only models, evaluation |
+| 🟠 **8** | Post-training | SFT, LoRA/QLoRA, RLHF, DPO, preference optimization |
+| 🟠 **9** | RAG + agents | Retrieval, tools, memory, orchestration, evaluation |
+| 🟠 **10** | Generative AI | VAEs, GANs, diffusion, latent generative models |
+| 🔴 **11** | Multimodal AI | CLIP, VLMs, image-text reasoning, multimodal instruction tuning |
+| 🔴 **12** | RL + reasoning | PPO, offline RL, RLHF/RLVR, reasoning-oriented training |
+| 🔴 **13** | AI systems | GPUs, distributed training, quantization, serving, inference |
+| 🔴 **14** | Frontier AI | 3D, world models, embodied AI, research methodology |
 
 > **Rule:** Do not wait until you “finish all theory” before building. Every phase should contain both study and implementation.
 
@@ -110,7 +182,10 @@ These are not deadlines. Depth matters more than speed.
 
 ---
 
-# Phase 0 — Computing Foundations
+<a id="phase-0-computing-foundations"></a>
+
+<details>
+<summary><strong>Phase 0 · Computing Foundations</strong> — Python · Git · Linux · NumPy</summary>
 
 ## Learn
 
@@ -146,7 +221,14 @@ You can take a dataset, load it, transform it with NumPy, visualize it, write re
 
 ---
 
-# Phase 1 — Mathematics for AI
+</details>
+
+---
+
+<a id="phase-1-mathematics-for-ai"></a>
+
+<details>
+<summary><strong>Phase 1 · Mathematics for AI</strong> — Linear Algebra · Calculus · Probability · Optimization</summary>
 
 You do **not** need to become a mathematician before learning ML. You do need enough mathematics to understand what the model is optimizing and why.
 
@@ -235,7 +317,14 @@ You can explain what a gradient means, derive the loss gradient of a simple mode
 
 ---
 
-# Phase 2 — Classical Machine Learning
+</details>
+
+---
+
+<a id="phase-2-classical-machine-learning"></a>
+
+<details>
+<summary><strong>Phase 2 · Classical Machine Learning</strong> — Supervised · Unsupervised · Evaluation</summary>
 
 Before deep learning, build statistical intuition.
 
@@ -293,7 +382,14 @@ You can choose a baseline, design a valid experiment, detect leakage, select an 
 
 ---
 
-# Phase 3 — Neural Networks from First Principles
+</details>
+
+---
+
+<a id="phase-3-neural-networks-from-first-principles"></a>
+
+<details>
+<summary><strong>Phase 3 · Neural Networks from First Principles</strong> — Backprop · Autograd · Optimization</summary>
 
 This phase is where deep learning stops feeling like magic.
 
@@ -336,7 +432,14 @@ without hiding behind a framework.
 
 ---
 
-# Phase 4 — Deep Learning with PyTorch
+</details>
+
+---
+
+<a id="phase-4-deep-learning-with-pytorch"></a>
+
+<details>
+<summary><strong>Phase 4 · Deep Learning with PyTorch</strong> — Training · Debugging · Experiments</summary>
 
 Now use a modern framework without losing the fundamentals.
 
@@ -375,7 +478,14 @@ You can train a model without copying a full notebook and diagnose exploding los
 
 ---
 
-# Phase 5 — Computer Vision
+</details>
+
+---
+
+<a id="phase-5-computer-vision"></a>
+
+<details>
+<summary><strong>Phase 5 · Computer Vision</strong> — CNNs · ViTs · Detection · Segmentation</summary>
 
 ## Learn the progression
 
@@ -433,7 +543,14 @@ You can train a model without copying a full notebook and diagnose exploding los
 
 ---
 
-# Phase 6 — NLP and Transformers
+</details>
+
+---
+
+<a id="phase-6-nlp-and-transformers"></a>
+
+<details>
+<summary><strong>Phase 6 · NLP and Transformers</strong> — Tokenization · Attention · Transformers</summary>
 
 ## Start with classical NLP
 
@@ -493,7 +610,14 @@ Study:
 
 ---
 
-# Phase 7 — Large Language Models
+</details>
+
+---
+
+<a id="phase-7-large-language-models"></a>
+
+<details>
+<summary><strong>Phase 7 · Large Language Models</strong> — Pretraining · Scaling · Decoder-only LMs</summary>
 
 This phase moves from “I know Transformers” to “I understand modern LLMs.”
 
@@ -563,7 +687,14 @@ You can explain why decoder-only Transformers dominate modern LLMs, what limits 
 
 ---
 
-# Phase 8 — Fine-Tuning, Alignment and Post-Training
+</details>
+
+---
+
+<a id="phase-8-fine-tuning-alignment-and-post-training"></a>
+
+<details>
+<summary><strong>Phase 8 · Fine-Tuning, Alignment and Post-Training</strong> — SFT · LoRA · QLoRA · RLHF · DPO</summary>
 
 Modern models are not finished after pretraining.
 
@@ -615,7 +746,14 @@ Papers:
 
 ---
 
-# Phase 9 — Retrieval, RAG and AI Agents
+</details>
+
+---
+
+<a id="phase-9-retrieval-rag-and-ai-agents"></a>
+
+<details>
+<summary><strong>Phase 9 · Retrieval, RAG and AI Agents</strong> — Embeddings · Retrieval · Tools · Agents</summary>
 
 ## Retrieval fundamentals
 
@@ -683,7 +821,14 @@ Do not build an agent when a deterministic workflow is enough.
 
 ---
 
-# Phase 10 — Generative AI and Diffusion
+</details>
+
+---
+
+<a id="phase-10-generative-ai-and-diffusion"></a>
+
+<details>
+<summary><strong>Phase 10 · Generative AI and Diffusion</strong> — VAE · GAN · Diffusion · Latent Models</summary>
 
 ## Learn the historical progression
 
@@ -722,7 +867,14 @@ Do not build an agent when a deterministic workflow is enough.
 
 ---
 
-# Phase 11 — Multimodal AI
+</details>
+
+---
+
+<a id="phase-11-multimodal-ai"></a>
+
+<details>
+<summary><strong>Phase 11 · Multimodal AI</strong> — CLIP · VLMs · Grounding · Vision-Language</summary>
 
 Modern AI increasingly connects language, images, audio, video and 3D information.
 
@@ -767,7 +919,14 @@ Move beyond “describe this image” toward:
 
 ---
 
-# Phase 12 — Reinforcement Learning and Reasoning
+</details>
+
+---
+
+<a id="phase-12-reinforcement-learning-and-reasoning"></a>
+
+<details>
+<summary><strong>Phase 12 · Reinforcement Learning and Reasoning</strong> — PPO · RLHF · RLVR · Reasoning</summary>
 
 ## RL foundations
 
@@ -827,7 +986,14 @@ Understand:
 
 ---
 
-# Phase 13 — AI Systems and Efficient Inference
+</details>
+
+---
+
+<a id="phase-13-ai-systems-and-efficient-inference"></a>
+
+<details>
+<summary><strong>Phase 13 · AI Systems and Efficient Inference</strong> — GPU · Distributed Training · Serving · Quantization</summary>
 
 A great model that cannot be trained or served efficiently is not a complete system.
 
@@ -901,7 +1067,14 @@ Learn:
 
 ---
 
-# Phase 14 — 3D, Embodied and Frontier AI
+</details>
+
+---
+
+<a id="phase-14-3d-embodied-and-frontier-ai"></a>
+
+<details>
+<summary><strong>Phase 14 · 3D, Embodied and Frontier AI</strong> — 3D Vision · World Models · Robotics · Research</summary>
 
 This phase should come **after** strong foundations. It is not a replacement for them.
 
@@ -969,7 +1142,11 @@ The exact frontier will change. The skills from Phases 0–13 are what let you a
 
 ---
 
-# The Paper Ladder
+</details>
+
+---
+
+# 📄 The Paper Ladder
 
 You do not need to read 500 papers. Start with papers that changed the field.
 
@@ -1037,7 +1214,7 @@ For each paper:
 
 ---
 
-# The Project Ladder
+# 🛠️ The Project Ladder
 
 Projects are where knowledge becomes skill.
 
@@ -1077,7 +1254,7 @@ Projects are where knowledge becomes skill.
 
 ---
 
-# Choose Your Career Track
+# 🧭 Choose Your Career Track
 
 You do not need equal depth everywhere.
 
@@ -1093,7 +1270,7 @@ You do not need equal depth everywhere.
 
 ---
 
-# A Practical Weekly Study System
+# ⏱️ A Practical Weekly Study System
 
 A simple system that works better than passive course collecting:
 
@@ -1129,7 +1306,7 @@ Example 15-hour week:
 
 ---
 
-# How to Read AI Papers
+# 🔍 How to Read AI Papers
 
 Do not read every paper linearly from page 1 to the appendix.
 
@@ -1189,7 +1366,7 @@ My experiment idea:
 
 ---
 
-# When Are You Job-Ready?
+# ✅ When Are You Job-Ready?
 
 You do **not** need to finish the entire roadmap before applying.
 
@@ -1233,7 +1410,7 @@ Add:
 
 ---
 
-# How to Stay Current
+# 📡 How to Stay Current
 
 Do not try to consume all AI news.
 
@@ -1269,7 +1446,7 @@ If none of those changed meaningfully, you probably do not need to reorganize yo
 
 ---
 
-# Resource Library
+# 📚 Resource Library
 
 ## Foundations
 
@@ -1317,7 +1494,7 @@ If none of those changed meaningfully, you probably do not need to reorganize yo
 
 ---
 
-# What Not to Do
+# ⚠️ What Not to Do
 
 Avoid these common traps:
 
@@ -1335,7 +1512,7 @@ Avoid these common traps:
 
 ---
 
-# The End Goal
+# 🏁 The End Goal
 
 The roadmap is complete when you no longer need a roadmap.
 
